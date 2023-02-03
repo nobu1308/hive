@@ -28,7 +28,7 @@ const GlobalStyle = () => {
   );
 };
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <PlayerProvider>
