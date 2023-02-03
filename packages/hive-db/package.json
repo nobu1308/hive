@@ -4,8 +4,8 @@
   "main": "index.tsx",
   "dependencies": {
     "firebase": "^9.6.1",
-    "react": "^17.0.2",
-    "hive-lib": "*"
+    "hive-lib": "*",
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.38"
