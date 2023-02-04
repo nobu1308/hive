@@ -43,8 +43,6 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-WORKDIR /app/apps/web
-
 CMD ["yarn", "start"]
 
 # If using npm comment out above and use below instead
