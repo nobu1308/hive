@@ -42,7 +42,7 @@ const SignInModal = (props: SignInModalProps) => {
         <ModalHeader>Sign In</ModalHeader>
         <ModalBody>
           <div className='divide-y divide-dashed'>
-            <div className='pb-4'>
+            {/* <div className='pb-4'>
               <GoogleButton
                 disabled={disabled}
                 onPending={onPending}
@@ -54,7 +54,7 @@ const SignInModal = (props: SignInModalProps) => {
               >
                 Sign in with Google
               </GoogleButton>
-            </div>
+            </div> */}
             <div className='py-4'>
               <SignInEmailForm
                 disabled={disabled}

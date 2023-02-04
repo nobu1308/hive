@@ -29,7 +29,7 @@ const SignUpForm = () => {
 
   return (
     <div className='divide-y divide-dashed'>
-      <div className='pb-4'>
+      {/* <div className='pb-4'>
         <GoogleButton
           onPending={onPending}
           onFailure={() => {
@@ -41,7 +41,7 @@ const SignUpForm = () => {
         >
           Sign up with Google
         </GoogleButton>
-      </div>
+      </div> */}
       <div className='pt-4'>
         <SignUpEmailForm
           setPending={setPending}
