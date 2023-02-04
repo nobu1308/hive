@@ -21,8 +21,6 @@
     "focus-visible": "^5.2.0",
     "formik": "^2.2.9",
     "framer-motion": "^5",
-    "hive-db": "*",
-    "hive-lib": "*",
     "immer": "^9.0.7",
     "lodash": "^4.17.21",
     "next": "12.3.4",
