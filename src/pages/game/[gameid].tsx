@@ -47,8 +47,12 @@ const GameView = ({ uid, game }: { uid: string | null; game: Game }) => {
 
   return (
     <>
-      <GameOnline uid={uid} game={game} />
-      <GameOnlineSidebar />
+      <div className='w-full sm:w-1/3 px-2'>
+        <GameOnlineSidebar />
+      </div>
+      <div className='w-full min-h-[500px] sm:w-2/3 pt-1 px-2'>
+        <GameOnline uid={uid} game={game} />
+      </div>
     </>
   );
 };
@@ -72,10 +76,12 @@ const Game = () => {
         <title>{title}</title>
       </Head>
       <NavBar fullWidth className='border-b' />
-      <div className='relative w-full h-full overflow-hidden'>
-        <Provider store={store}>
-          {game ? <GameView uid={uid} game={game} /> : 'Loading...'}
-        </Provider>
+      <div className='container mx-auto'>
+        <div className='flex flex-row flex-row-reverse flex-wrap py-4'>
+          <Provider store={store}>
+            {game ? <GameView uid={uid} game={game} /> : <div className='grid w-screen h-screen place-items-center'>Loading...</div> }
+          </Provider>
+        </div>
       </div>
     </>
   );

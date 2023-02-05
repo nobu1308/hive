@@ -31,22 +31,24 @@ const HandGrid = forwardRef<SimpleGridProps & HandGridProps, As>(
 
     return (
       <SimpleGrid
-        minChildWidth='80px'
+        minChildWidth='50px'
         ref={ref}
         {...rest}
         onClick={onClickTable}
       >
         {stacks.map((stack, index) => {
           return (
-            <svg key={index} width={80} height={80} viewBox='-40 -40 80 80'>
-              <TileStack
-                stack={stack}
-                hexSize={35}
-                tilePadding={0}
-                selectedTileId={selectedTileId || undefined}
-                onClick={onClickHandStack}
-              />
-            </svg>
+            <div key={index}>
+              <svg viewBox='-40 -40 80 80'>
+                <TileStack
+                  stack={stack}
+                  hexSize={35}
+                  tilePadding={0}
+                  selectedTileId={selectedTileId || undefined}
+                  onClick={onClickHandStack}
+                />
+              </svg>
+            </div>
           );
         })}
       </SimpleGrid>

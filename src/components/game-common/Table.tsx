@@ -44,9 +44,9 @@ const Table = (props: PropsWithChildren<TableProps>) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
   const [boxRef, { width, height }] = useElementSize();
-  const viewBox = svgRef.current
-    ? `-${width / 2 - 200} -${height / 2 - 32} ${width} ${height}`
-    : undefined;
+
+  // TODO fixed size for now. is it large enough?
+  const viewBox = svgRef.current ? `-500 -500 1000 1000` : undefined;
 
   useEffect(() => {
     const svg = svgRef.current;
@@ -136,8 +136,6 @@ const Table = (props: PropsWithChildren<TableProps>) => {
       <Box ref={boxRef} width='full' height='full'>
         <svg
           ref={svgRef}
-          width={width}
-          height={height}
           viewBox={viewBox}
           onClick={onClickTable}
         >

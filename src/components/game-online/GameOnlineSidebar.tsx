@@ -28,7 +28,7 @@ const GameOnlineSidebar = () => {
   );
 
   return (
-    <div className='absolute flex flex-col top-4 right-4 bottom-4 w-[360px] pointer-events-none'>
+    <div className='flex flex-col m-2 pointer-events-none'>
       <div className='shrink mb-4'>
         <div className='flex'>
           <GameOnlineBoardControls />
